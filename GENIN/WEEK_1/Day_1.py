@@ -10,7 +10,7 @@ print("New lines can be created with a backslash and n.")
 
 print("Hello " + input("what is your name? "))
 
-#getting length of a string
+#getting length ofa string
 print(len(input("what is your name? ")))
 
 # python variables
