@@ -1,0 +1,62 @@
+#Day_5
+#for loops, range and code block
+
+Fruits = ["Apple", "Peach", "pear"]
+for Fruit in Fruits:
+    print("Fruit")
+    print(Fruit + " pie")
+
+#average student's height
+
+student_height = input("please enter the height of various student; ").split()
+for n in range(0, len(student_height)):
+    student_height[n] = int(student_height[n])
+    print(student_height)
+    sum_student_height = sum(student_height)
+    len_student = len(student_height)
+
+sum_student_height = 0
+
+for height in student_height:
+    sum_student_height += height
+
+len_student = 0
+for num in student_height:
+    len_student += 1
+
+average_height = int(sum_student_height)/ int(len_student)
+print(f"the average student height is {average_height}")
+
+#high score
+
+student_score = input("input a list of student scores: ").split()
+for n in range(0, len(student_score)):
+    student_score[n] = int(student_score[n])
+
+highest_score = 0
+for i in student_score:
+    if i > highest_score:
+        highest_score = i
+print(f"the highest score is {highest_score}")
+
+
+#sum of even numbers
+
+even_numbers = 0
+for i in range(0, 101):
+    if i % 2 == 0:
+        even_numbers += i
+print(even_numbers)
+
+#FizzBuzz
+
+for i in range(1, 101):
+    if i % 3 == 0 and i % 5 == 0:
+        print("FizzBuzz")
+    elif i % 5 == 0:
+        print("Buzz")
+    elif i % 3 == 0:
+        print("Fizz")
+    else:
+        print(i)
+
