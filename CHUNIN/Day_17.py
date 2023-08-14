@@ -29,8 +29,8 @@ class Question:
     def __init__(self, q_text, q_answer):
        self.text = q_text
        self.answer = q_answer
-if Day17 == Question:
-Data == question_data
+from Day17 import Question
+from Data import question_data
 from Quiz_brain import QuizBrain
 
 question_bank = []
